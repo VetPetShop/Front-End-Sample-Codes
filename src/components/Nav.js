@@ -1,58 +1,43 @@
 import React from 'react';
-import { Link,useNavigate } from 'react-router-dom';
-const Nav=()=>{
-    const auth = localStorage.getItem("user");
-    const navigate = useNavigate();
-    const logout=()=>{
-        
-        localStorage.clear();
-        navigate("/SignUp");
+import { Link } from 'react-router-dom';
+
+function Nav() {
+    const handleSubmit=(e)=>{
+        e.preventDefault();
     }
-
-    if (auth) {
-        return(
-            <div>
-                <ul className='nav-ul'>
-                <li><Link to="/">Products</Link></li>
-                 <li><Link to="/add">add products</Link></li>
-                 <li><Link to= "/update">update products</Link></li>
-                 <li> <Link to ="/profile">profile</Link></li>
-                 <li><Link to = "/SignUp" onClick={logout}>Logout</Link></li>
-                </ul>
-            </div>
-        )
-    } else {
-        return(
-            <div>
-                <ul className='nav-ul'>
-            <li><Link to="/SignUp">SignUp</Link></li>
-            </ul>
-            </div>
-        )
-        
-    }
-
-
-    // return(
-    //     <div>
-    //         <ul className='nav-ul'>
-    //             if (auth) {
-                    
-    //             } else {
-                    
-    //             }
-            
-    //             {auth ?
-    //             <li><Link to = "/logout">Logout</Link></li>
-    //              : 
-    //              <li><Link to="/SignUp">SignUp</Link></li>, 
-    //              <li><Link to="/">Products</Link></li>,
-    //             <li><Link to="/add">add products</Link></li>,
-    //             <li><Link to= "/update">update products</Link></li>,
-    //             <li> <Link to ="/profile">profile</Link></li>}
+    return (
+        <nav className="navbar navbar-expand-lg">
+            <div className="container-fluid">
+                {/* logo */}
                 
-    //         </ul>
-    //     </div>
-    // )
+                    <img src={process.env.PUBLIC_URL + '/Images/VetPetShop_logo.png'} className="logo img-fluid" alt="Responsive" />
+                
+                {/* Rest of the navigation */}
+                <form className="searchbox d-lg-flex me-auto" role="search" onSubmit={handleSubmit}>
+                    <input className="form-control" type="search" placeholder="Search pets" aria-label="Search" />
+                    <button className="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul className="navbar-nav mb-2 mb-lg-0">
+                        <li className="nav-item">
+                            <Link className="nav-link headernav" to="/ConsultDoctor">Consult Doctor</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link headernav" to="/Login">Login</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link headernav" to="/SignUp">Sign-Up</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link headernav" to="/Cart">
+                                Cart
+                                <img src={process.env.PUBLIC_URL + '/Images/cart.png'} className="cartimg" alt="Cart" />
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    );
 }
 export default Nav;

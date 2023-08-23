@@ -2,15 +2,16 @@ import './App.css';
 import Nav from './components/Nav.js';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Footer from './components/Footer';
-import SignUP from './components/SignUp';
-import SignUp from './components/SignUp';
-import PrivateComponent from './components/PrivateComponent';
+import HomePage from './components/HomePage';
+
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
+    <div>
+      
       <Nav/>
-      <Routes>
+      <HomePage/>
+      <Footer/>
+      {/* <Routes>
         <Route element={<PrivateComponent/>}>
         <Route path='/' element={<h1>Products Listing componenet</h1>}/>
         <Route path='/add' element={<h1>add products</h1>}/>
@@ -19,9 +20,9 @@ function App() {
         <Route path='/profile' element={<h1>profile</h1>}/>
         </Route>
         <Route path='/SignUp' element={<SignUP/>}></Route>
-      </Routes>
-      </BrowserRouter>
-      <Footer/>
+      </Routes> */}
+      
+      
     </div>
   );
 }
