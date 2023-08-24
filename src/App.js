@@ -3,13 +3,15 @@ import Nav from './components/Nav.js';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Footer from './components/Footer';
 import HomePage from './components/HomePage';
+import PetPage from './components/PetPage';
 
 function App() {
   return (
     <div>
       
       <Nav/>
-      <HomePage/>
+      {/* <HomePage/> */}
+      <PetPage/>
       <Footer/>
       {/* <Routes>
         <Route element={<PrivateComponent/>}>
