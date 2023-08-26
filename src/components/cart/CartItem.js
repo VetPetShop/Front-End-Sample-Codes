@@ -14,16 +14,16 @@ function CartItem() {
                         <div className="card-body">
                             <h5 className="card-title">Suresh Dasari</h5>
                             <p className="card-text">Suresh Dasari is a founder and technical lead developer in tutlane.</p>
-                            <Link to="/Delete">Delete</Link> | <Link to="/Share">Share</Link>
+                            <Link to="">Delete</Link> | <Link to="">Share</Link>
                             <div className="btn-group m-2 btn-sm btn-group-toggle" data-toggle="buttons">
                                 <label className="btn btn-sm btn-light">
-                                    <Link to="/AddQty" className="qty">+</Link>
+                                    <Link to="" className="qty">+</Link>
                                 </label>
                                 <label className="btn btn-sm btn-secondary">
                                     qty
                                 </label>
                                 <label className="btn btn-sm btn-light">
-                                    <Link to="/RemoveQty" className="qty">-</Link>
+                                    <Link to="" className="qty">-</Link>
                                 </label>
                             </div>
                         </div>
