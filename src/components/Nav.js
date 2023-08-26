@@ -9,9 +9,9 @@ function Nav() {
         <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
                 {/* logo */}
-                
+                <Link to="/">
                     <img src={process.env.PUBLIC_URL + '/Images/VetPetShop_logo.png'} className="logo img-fluid" alt="Responsive" />
-                
+                    </Link>
                 {/* Rest of the navigation */}
                 <form className="searchbox d-lg-flex me-auto" role="search" onSubmit={handleSubmit}>
                     <input className="form-control" type="search" placeholder="Search pets" aria-label="Search" />
@@ -27,6 +27,9 @@ function Nav() {
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link headernav" to="/SignUp">Sign-Up</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link headernav" to="/Orders">Orders</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link headernav" to="/Cart">

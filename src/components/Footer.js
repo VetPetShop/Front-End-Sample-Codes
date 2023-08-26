@@ -10,19 +10,19 @@ function Footer() {
             <h5>VetPetShop</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <Link to="/AboutUs" className="nav-link p-1 text-muted">Who we are</Link>
+                <Link to="/" className="nav-link p-1 text-muted">Who we are</Link>
               </li>
               <li className="nav-item mb-2">
-                <Link to="/TandC" className="nav-link p-1 text-muted">Terms & Conditions</Link>
+                <Link to="/" className="nav-link p-1 text-muted">Terms & Conditions</Link>
               </li>
               <li className="nav-item mb-2">
-                <Link to="/Features" className="nav-link p-1 text-muted">Features</Link>
+                <Link to="/" className="nav-link p-1 text-muted">Features</Link>
               </li>
               <li className="nav-item mb-2">
                 <Link to="" className="nav-link p-1 text-muted">We respect your Privacy</Link>
               </li>
               <li className="nav-item mb-2">
-                <Link to="/ReturnsAdnRefund" className="nav-link p-1 text-muted">Returns & Refunds Policy</Link>
+                <Link to="/" className="nav-link p-1 text-muted">Returns & Refunds Policy</Link>
               </li>
             </ul>
           </div>
@@ -31,7 +31,7 @@ function Footer() {
             <h5>Payments & Orders</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <Link to="/Orders" className="nav-link p-0 text-muted">Track your Orders</Link>
+                <Link to="" className="nav-link p-0 text-muted">Track your Orders</Link>
               </li>
               <li className="nav-item mb-2">
                 <Link to="" className="nav-link p-0 text-muted">Shipping details</Link>
@@ -43,7 +43,7 @@ function Footer() {
                 <Link to="" className="nav-link p-0 text-muted">Returns</Link>
               </li>
               <li className="nav-item mb-2">
-                <Link to="/Faq" className="nav-link p-0 text-muted">FAQs</Link>
+                <Link to="" className="nav-link p-0 text-muted">FAQs</Link>
               </li>
             </ul>
           </div>
@@ -52,16 +52,16 @@ function Footer() {
             <h5>Help & Service</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <Link to="/Home" className="nav-link p-0 text-muted">Home</Link>
+                <Link to="/" className="nav-link p-0 text-muted">Home</Link>
               </li>
               <li className="nav-item mb-2">
-                <Link to="/ContactUs" className="nav-link p-0 text-muted">Contact Us</Link>
+                <Link to="/" className="nav-link p-0 text-muted">Contact Us</Link>
               </li>
               <li className="nav-item mb-2">
-                <Link to="/AboutUs" className="nav-link p-0 text-muted">About Us</Link>
+                <Link to="/" className="nav-link p-0 text-muted">About Us</Link>
               </li>
               <li className="nav-item mb-2">
-                <Link to="/Faq" className="nav-link p-0 text-muted">FAQs</Link>
+                <Link to="/" className="nav-link p-0 text-muted">FAQs</Link>
               </li>
             </ul>
           </div>

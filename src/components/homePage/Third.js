@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Third() {
     return (
@@ -16,27 +17,34 @@ function Third() {
                 <div className="col shopnow">
                     <div>
                         <img src={process.env.PUBLIC_URL + '/Images/dogs/dog4.jpg'} className="img-fluid shopnowimage" alt="" />
+                        <Link to="/DogPage">
                         <div className="shopnowbtn">
-                            <button type="button" className="btn">Shop Now</button>
+                            <button  className="btn">Shop Now</button>
                         </div>
+                        </Link>
                     </div>
                 </div>
 
                 <div className="col shopnow">
                     <div>
                         <img src={process.env.PUBLIC_URL + '/Images/cats/persiancat3.jpg'} className="img-fluid shopnowimage" alt="" />
+                        <Link to="/CatPage">
                         <div className="shopnowbtn">
-                            <button type="button" className="btn">Shop Now</button>
+                            <button  className="btn">Shop Now</button>
                         </div>
+                        </Link>
                     </div>
                 </div>
 
                 <div className="col shopnow">
                     <div>
                         <img src={process.env.PUBLIC_URL + '/Images/Rabbits/americanrabbit.jpg'} className="img-fluid shopnowimage" alt="" />
+                        <Link to="/RabbitPage">
                         <div className="shopnowbtn">
-                            <button type="button" className="btn">Shop Now</button>
+
+                            <button className="btn">Shop Now</button>
                         </div>
+                        </Link>
                     </div>
                 </div>
 

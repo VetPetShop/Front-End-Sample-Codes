@@ -1,28 +1,40 @@
 import './App.css';
 import Nav from './components/Nav.js';
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Route,Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import HomePage from './components/HomePage';
-import PetPage from './components/PetPage';
+import CartPage from './components/CartPage';
+import OrderPage from './components/OrderPage';
+import Login from './components/Login';
+import SignUp from './components/SignUp';
+import ProductPage from './components/ProductPage';
+import PetPage from "./components/PetPage";
+
+
 
 function App() {
   return (
     <div>
       
       <Nav/>
-      {/* <HomePage/> */}
-      <PetPage/>
+      <div>
+  <Routes>
+    <Route path="/" exact element={<HomePage/>} />
+    <Route path="/Login" element={<Login/>} />
+    <Route path="/SignUp" element={<SignUp/>} />
+    <Route path='/Orders' element={<OrderPage/>} />
+    <Route path='/Cart' element={<CartPage/>} />
+    <Route path='/:categoryName' element={<ProductPage/>} />
+    
+    <Route path='/PetPage' element={<PetPage/>}/>
+  </Routes>
+</div>
+
+    
+      
+      
       <Footer/>
-      {/* <Routes>
-        <Route element={<PrivateComponent/>}>
-        <Route path='/' element={<h1>Products Listing componenet</h1>}/>
-        <Route path='/add' element={<h1>add products</h1>}/>
-        <Route path='update' element={<h1>updating the product</h1>}/>
-        <Route path='/logout' element={<h1>logging out</h1>}/>
-        <Route path='/profile' element={<h1>profile</h1>}/>
-        </Route>
-        <Route path='/SignUp' element={<SignUP/>}></Route>
-      </Routes> */}
+      
       
       
     </div>

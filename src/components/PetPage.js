@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import {useState,useEffect} from "react";
+import {useState} from "react";
 import "./petspage.css";
 // import { response } from "express";
 

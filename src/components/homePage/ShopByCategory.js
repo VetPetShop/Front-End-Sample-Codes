@@ -1,42 +1,74 @@
 import React from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
-function ShopByCategory(){
-    return(
-<div class="container shopcategory">
-          <h2>Shop by Category</h2>
-          <div class="row text-center p-4">
-            <div class="col-2">
-              <Link to="/Shop">
-                <img src="../Images/Birds/goldenpheasant1.jpg" class="rounded-circle" alt=""/><label for="Birds">Birds</label>
-              </Link>
-            </div>
-            <div class="col-2">
-              <Link to="/Shop">
-                <img src="../Images/Rabbits/whiterabbit1.jpg" class="rounded-circle" alt=""/><label for="Rabbits">Rabbits</label>
-              </Link>
-            </div>
-            <div class="col-2">
-              <Link to="/Shop">
-                <img src="../Images/Fish&Turtles/indianturtle.jpg" class="rounded-circle" alt=""/><label for="Turtles">Turtles</label>
-              </Link>
-            </div>
-            <div class="col-2">
-              <Link to="/Shop">
-                <img src="../Images/Fish&Turtles/goldfish.jpg" class="rounded-circle" alt=""/><label for="Fish">Fish</label>
-              </Link>
-            </div>
-            <div class="col-2">
-              <Link to="/Shop">
-                <img src="../Images/dogs/dog11.jpg" class="rounded-circle" alt=""/><label for="Dogs">Dogs</label>
-              </Link>
-            </div>
-            <div class="col-2">
-              <Link to="/Shop">
-                <img src="../Images/cats/persiancat1.jpg" class="rounded-circle" alt=""/><label for="Cats">Cats</label>
-              </Link>
-            </div>
-          </div>
+function ShopByCategory() {
+  return (
+    <div className="container shopcategory">
+      <h2>Shop by Category</h2>
+      <div className="row text-center p-4">
+        {/* <div className="col-2">
+          <Link to="/BirdsPAge">
+            <img
+              src="../Images/Birds/goldenpheasant1.jpg"
+              className="rounded-circle"
+              alt=""
+            />
+            <label htmlFor="Birds">Birds</label>
+          </Link>
+        </div> */}
+        <div className="col-2">
+          <Link to="/RabbitPAge">
+            <img
+              src="../Images/Rabbits/whiterabbit1.jpg"
+              className="rounded-circle"
+              alt=""
+            />
+            <label htmlFor="Rabbits">Rabbits</label>
+          </Link>
         </div>
-    )
-}export default ShopByCategory;
+        {/* <div className="col-2">
+          <Link to="/TurtlesPage">
+            <img
+              src="../Images/Fish&Turtles/indianturtle.jpg"
+              className="rounded-circle"
+              alt=""
+            />
+            <label htmlFor="Turtles">Turtles</label>
+          </Link>
+        </div> */}
+        {/* <div className="col-2">
+          <Link to="/FishPage">
+            <img
+              src="../Images/Fish&Turtles/goldfish.jpg"
+              className="rounded-circle"
+              alt=""
+            />
+            <label htmlFor="Fish">Fish</label>
+          </Link>
+        </div> */}
+        <div className="col-2">
+          <Link to="/DogPage">
+            <img
+              src="../Images/dogs/dog11.jpg"
+              className="rounded-circle"
+              alt=""
+            />
+            <label htmlFor="Dogs">Dogs</label>
+          </Link>
+        </div>
+        <div className="col-2">
+          <Link to="/CatPage">
+            <img
+              src="../Images/cats/persiancat1.jpg"
+              className="rounded-circle"
+              alt=""
+            />
+            <label htmlFor="Cats">Cats</label>
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default ShopByCategory;
