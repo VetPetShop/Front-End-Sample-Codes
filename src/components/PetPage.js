@@ -103,14 +103,14 @@ function PetPage() {
                             <span className="fa fa-star checked"></span>
                             <span className="fa fa-star checked"></span>
                             <span className="fa fa-star"></span>
-                            <Link to="/ReviewPage"style={{ float: "right", marginRight: "40px" }} >Write a review</Link>
+                            <Link to=""style={{ float: "right", marginRight: "40px" }} >Write a review</Link>
                         </div>
                         <hr />
                         <span>M.R.P.:</span><span className="px-5 fa fa-inr"> 1,76,000</span><br />
                         <span className="text-danger">-20%</span><s className="px-3 fa fa-inr"> 1,76,000 </s> <span className="display-6 px-5 fa fa-inr"> 1,40,800</span>
                         <h5>Inclusive of taxes</h5>
                         <h4 className="text-danger mb-0">Offers :</h4>
-                        <h5>EMI starts at ₹8,498. No Cost EMI available <Link to="/EmiOptions">EMI options</Link></h5>
+                        <h5>EMI starts at ₹8,498. No Cost EMI available <Link to="">EMI options</Link></h5>
                         <hr />
                         <div className="dtls">
                             <label htmlFor="breed"><b>Breed</b></label>
