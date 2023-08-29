@@ -17,7 +17,7 @@ function ShopByCategory() {
           </Link>
         </div> */}
         <div className="col-2">
-          <Link to="/pet/Rabbits">
+          <Link to="/pet/rabbit">
             <img
               src="../Images/Rabbits/whiterabbit1.jpg"
               className="rounded-circle"
@@ -47,7 +47,7 @@ function ShopByCategory() {
           </Link>
         </div> */}
         <div className="col-2">
-          <Link to="/pet/Dogs">
+          <Link to="/pet/dog">
             <img
               src="../Images/dogs/dog11.jpg"
               className="rounded-circle"
@@ -57,7 +57,7 @@ function ShopByCategory() {
           </Link>
         </div>
         <div className="col-2">
-          <Link to="/pet/Cats">
+          <Link to="/pet/cat">
             <img
               src="../Images/cats/persiancat1.jpg"
               className="rounded-circle"

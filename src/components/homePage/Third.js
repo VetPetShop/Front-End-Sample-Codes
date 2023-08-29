@@ -17,7 +17,7 @@ function Third() {
                 <div className="col shopnow">
                     <div>
                         <img src={process.env.PUBLIC_URL + '/Images/dogs/dog4.jpg'} className="img-fluid shopnowimage" alt="" />
-                        <Link to="/pet/Dogs">
+                        <Link to="/pet/dog">
                         <div className="shopnowbtn">
                             <button  className="btn">Shop Now</button>
                         </div>
@@ -28,7 +28,7 @@ function Third() {
                 <div className="col shopnow">
                     <div>
                         <img src={process.env.PUBLIC_URL + '/Images/cats/persiancat3.jpg'} className="img-fluid shopnowimage" alt="" />
-                        <Link to="/pet/Cats">
+                        <Link to="/pet/cat">
                         <div className="shopnowbtn">
                             <button  className="btn">Shop Now</button>
                         </div>
@@ -39,7 +39,7 @@ function Third() {
                 <div className="col shopnow">
                     <div>
                         <img src={process.env.PUBLIC_URL + '/Images/Rabbits/americanrabbit.jpg'} className="img-fluid shopnowimage" alt="" />
-                        <Link to="/pet/Rabbits">
+                        <Link to="/pet/rabbit">
                         <div className="shopnowbtn">
 
                             <button className="btn">Shop Now</button>

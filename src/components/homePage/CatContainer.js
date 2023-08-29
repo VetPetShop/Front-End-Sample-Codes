@@ -19,7 +19,7 @@ function CatContainer(){
               <h1>Pet Cats</h1>
               <p>Cats are friendly and playful in nature; cats are connoisseurs of comfort. A kitten is the delight of a household. All day long a comedy is played out by an incomparable actor</p>
               <p>Interacting and playing with cat helps your mind relax making you forget about your worries.</p>
-              <Link to="/pet/Cats"> --- &nbsp;&nbsp;&nbsp;Get a pet cat</Link>
+              <Link to="/pet/cat"> --- &nbsp;&nbsp;&nbsp;Get a pet cat</Link>
           </div>
 
             <div class="column">

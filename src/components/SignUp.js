@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-
+import React, { useState} from "react";
+import { useNavigate } from "react-router";
+// import { useHistory } from "react-router-dom";
 function SignUp() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -11,19 +12,59 @@ function SignUp() {
     const [gender, setGender] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
     const [passwordError, setPasswordError] = useState("");
+    const navigate = useNavigate();
+    // const [signUpSuccess,setSignUpSuccess]=useState(false)
+    // const history = useHistory();
 
-    const handleSignUp = (e) => {
+    const handleSignUp = async (e) => {
         e.preventDefault();
-
+    
+        // Add validation and error handling as needed
         if (password !== confirmPassword) {
-            setPasswordError("Passwords do not match");
-            return;
+          setPasswordError("Passwords do not match");
+          return;
         }
-
-        setPasswordError("");
-
-        // Perform sign-up logic here
-    };
+    
+        // Create the user object to send to the API
+        const user = {
+          email,
+          password,
+          firstName,
+          lastName,
+          address,
+          dob,
+          phoneNumber,
+          gender,
+        };
+    
+        try {
+          const response = await fetch("http://localhost:8080/users", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(user),
+          });
+    
+          if (response.ok) {
+            console.log("Signup successful");
+            alert("Signup successful");
+                // window.location.href="/Login";
+                navigate("/Login")
+            
+            // Handle success, such as showing a success message or redirecting
+          } else {
+            console.error("Signup error");
+            // Handle error, such as showing an error message
+          }
+          
+        }
+         catch (error) {
+          console.error("Network error", error);
+          // Handle network error, such as showing an error message
+        }
+        
+      };
 
     return (
         <div className="d-flex container justify-content-center">
