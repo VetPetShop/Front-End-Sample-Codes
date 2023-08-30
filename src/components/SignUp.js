@@ -49,7 +49,7 @@ function SignUp() {
           if (response.ok) {
             console.log("Signup successful");
             alert("Signup successful");
-                // window.location.href="/Login";
+                
                 navigate("/Login")
             
             
