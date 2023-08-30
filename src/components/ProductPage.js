@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ProductItem from "./product/ProductItem";
 import {useParams} from "react-router-dom"
-//import { response } from "express";
 
 function ProductPage(){
   const {categoryName} = useParams();

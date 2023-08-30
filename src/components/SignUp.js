@@ -38,7 +38,7 @@ function SignUp() {
         };
     
         try {
-          const response = await fetch("http://localhost:8080/users", {
+          const response = await fetch("http://localhost:8080/users/newuser", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -52,16 +52,15 @@ function SignUp() {
                 // window.location.href="/Login";
                 navigate("/Login")
             
-            // Handle success, such as showing a success message or redirecting
+            
           } else {
             console.error("Signup error");
-            // Handle error, such as showing an error message
           }
           
         }
          catch (error) {
           console.error("Network error", error);
-          // Handle network error, such as showing an error message
+          
         }
         
       };
