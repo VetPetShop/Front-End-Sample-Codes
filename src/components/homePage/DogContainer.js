@@ -19,7 +19,7 @@ function DogContainer() {
                     <p>
                         Interacting and playing with dogs helps your mind relax making you forget about your worries.
                     </p>
-                    <Link to="/pet/dog"> --- &nbsp;&nbsp;&nbsp;Get a pet dog</Link>
+                    <Link to="/pet/DOG"> --- &nbsp;&nbsp;&nbsp;Get a pet dog</Link>
                 </div>
 
 

@@ -9,6 +9,8 @@ import Login from './components/Login';
 import SignUp from './components/SignUp';
 import ProductPage from './components/ProductPage';
 import PetPage from "./components/PetPage";
+import Logout from './components/LogOut';
+import AddPetForm from './components/addPet/AddPetForm';
 
 
 
@@ -24,11 +26,13 @@ function App() {
     <Route path="/SignUp" element={<SignUp/>} />
     <Route path='/Orders' element={<OrderPage/>} />
     <Route path='/Cart' element={<CartPage/>} />
-    <Route path='/pet/:category' element={<ProductPage/>} />
-    
+    <Route path='/pet/:categoryName' element={<ProductPage/>} />
+    <Route path='/Logout' element={<Logout/>} />
     <Route path='/PetPage' element={<PetPage/>}/>
+    <Route path='/SellPet' element={<AddPetForm/>} />
   </Routes>
 </div>
+
 
     
       

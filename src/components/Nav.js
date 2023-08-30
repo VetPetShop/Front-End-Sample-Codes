@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Nav() {
+    const user = JSON.parse(localStorage.getItem('userData'));
+    const isLoggedIn = !!localStorage.getItem("userData");
     const handleSubmit=(e)=>{
         e.preventDefault();
     }
@@ -19,16 +21,15 @@ function Nav() {
                 </form>
                 <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul className="navbar-nav mb-2 mb-lg-0">
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <Link className="nav-link headernav" to="/ConsultDoctor">Consult Doctor</Link>
+                        </li> */}
+                        {isLoggedIn ? (
+                            <>
+                            <li className="nav-item">
+                            <Link className="nav-link headernav" to="/SellPet">Sell Pet</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link className="nav-link headernav" to="/Login">Login</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link headernav" to="/SignUp">Sign-Up</Link>
-                        </li>
-                        <li className="nav-item">
+                            <li className="nav-item">
                             <Link className="nav-link headernav" to="/Orders">Orders</Link>
                         </li>
                         <li className="nav-item">
@@ -37,6 +38,27 @@ function Nav() {
                                 <img src={process.env.PUBLIC_URL + '/Images/cart.png'} className="cartimg" alt="Cart" />
                             </Link>
                         </li>
+                        <li className="nav-item">
+                            <Link type='button' className="nav-link headernav" to="/Logout">Log out</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link headernav" to="">Hello {user.firstName}</Link>
+                        </li>
+                        </>
+                        ):(
+                            <>
+                            <li className="nav-item">
+                            <Link className="nav-link headernav" to="/Login">Login</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link headernav" to="/SignUp">Sign-Up</Link>
+                        </li>
+                        </>
+                        )
+                        
+                        }
+                        
+                        
                     </ul>
                 </div>
             </div>

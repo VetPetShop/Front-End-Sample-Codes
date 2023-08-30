@@ -6,8 +6,8 @@ function ShopByCategory() {
     <div className="container shopcategory">
       <h2>Shop by Category</h2>
       <div className="row text-center p-4">
-        {/* <div className="col-2">
-          <Link to="/BirdsPAge">
+        <div className="col-2">
+          <Link to="/pet/BIRDS">
             <img
               src="../Images/Birds/goldenpheasant1.jpg"
               className="rounded-circle"
@@ -15,9 +15,9 @@ function ShopByCategory() {
             />
             <label htmlFor="Birds">Birds</label>
           </Link>
-        </div> */}
+        </div>
         <div className="col-2">
-          <Link to="/pet/rabbit">
+          <Link to="/pet/RABBIT">
             <img
               src="../Images/Rabbits/whiterabbit1.jpg"
               className="rounded-circle"
@@ -26,8 +26,8 @@ function ShopByCategory() {
             <label htmlFor="Rabbits">Rabbits</label>
           </Link>
         </div>
-        {/* <div className="col-2">
-          <Link to="/TurtlesPage">
+        <div className="col-2">
+          <Link to="/pet/TURTLES">
             <img
               src="../Images/Fish&Turtles/indianturtle.jpg"
               className="rounded-circle"
@@ -35,9 +35,9 @@ function ShopByCategory() {
             />
             <label htmlFor="Turtles">Turtles</label>
           </Link>
-        </div> */}
-        {/* <div className="col-2">
-          <Link to="/FishPage">
+        </div>
+        <div className="col-2">
+          <Link to="/pet/FISH">
             <img
               src="../Images/Fish&Turtles/goldfish.jpg"
               className="rounded-circle"
@@ -45,9 +45,9 @@ function ShopByCategory() {
             />
             <label htmlFor="Fish">Fish</label>
           </Link>
-        </div> */}
+        </div>
         <div className="col-2">
-          <Link to="/pet/dog">
+          <Link to="/pet/DOG">
             <img
               src="../Images/dogs/dog11.jpg"
               className="rounded-circle"
@@ -57,7 +57,7 @@ function ShopByCategory() {
           </Link>
         </div>
         <div className="col-2">
-          <Link to="/pet/cat">
+          <Link to="/pet/CAT">
             <img
               src="../Images/cats/persiancat1.jpg"
               className="rounded-circle"
