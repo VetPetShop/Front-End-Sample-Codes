@@ -1,0 +1,39 @@
+body{
+    background-color: rgba(228, 228, 228, 0.756);
+}
+.container-fluid{
+    background-color: white;
+}
+footer{
+    margin-top: 2px;
+    margin-left: 50px;
+}
+.form-control{
+    outline: 1px solid black;
+    box-shadow: none;
+}
+.card{
+    margin: 15px 2px;
+}
+a{
+    text-decoration: none;
+}
+.qty{
+    color: black;
+    font-weight: bolder;
+}
+.btn-group{
+    float: right;
+    border: 1px solid black;
+}
+.btn-group label{
+    font-size: 15px;
+}
+.paylogo{
+    height: 38px;
+    width: auto;
+}
+.paylogo img{
+    height: 100%;
+    width: 100%;
+}
